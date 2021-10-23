@@ -11,7 +11,7 @@ include("functions.php");
 if(empty($_GET)){
   $pdo = connect_to_db();
 
-  $sql = "SELECT * FROM `feelbad_table`";
+  $sql = "SELECT * FROM `suberu_table`";
   $stmt = $pdo->prepare($sql);
   $status = $stmt->execute();
 
@@ -27,7 +27,7 @@ if(empty($_GET)){
     $rand = rand(0,$lengthOfArray -1);
     $topic = $result[$rand]["topic"];
     $topic_id = $result[$rand]["id"];
-    $name_table='feelbad_table';
+    $name_table='suberu_table';
     // var_dump($topic);
     // var_dump($topic_id);
     // exit();
@@ -49,7 +49,7 @@ if(empty($_GET)){
     <link rel="stylesheet" href="./mystyle.css" type="text/css">
   </head>
   <body>
-    <h1>相手の話を遮るには</h1>
+    <h1>貴方に適した話題は</h1>
 <hr>
     <div class="comment">
       <?= $topic?>

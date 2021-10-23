@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="mystyle.css">
     </head>
   <body>
-    <p>会話に困ったとき</p>
-    <p2><a href="silent.php" class="btn">無言が続く場合</a><p2>
-    <p3><a href="feelbad.php" class="btn">相手の話を遮る場合</a><p3>
+    <h1>会話に困ったとき</h1>
+    <hr>
+    <p1><a href="silent_select.php" class="btn">無言が続く場合</a><p1>
+    <p1><a href="feelbad.php" class="btn">相手の話を遮る場合</a><p1>
+    <p1><a href="comment input.php" class="btn">案を提案</a><p1>
+    <!-- <form method="post" action="CGIのURI" -->
+</form>
 </body>
 </html>
 ​
